@@ -126,4 +126,5 @@ type IVolume interface {
 	IsReadOnly() bool
 	Delete() error
 	Detach() error
+	GetOwner() error
 }
