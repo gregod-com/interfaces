@@ -38,6 +38,19 @@ type IConfigObject interface {
 	GetLastUsed() time.Time
 }
 
+// IConfigObject interface ...
+type IPluginIndex interface {
+	Update() error
+	PrintConfig() error
+	// GetSourceAsString() string
+	GetSourceAsBytes() []byte
+	GetConfigPath() string
+	GetPluginList() interface{}
+	// IsDebug() bool
+	// GetProjectDir() string
+	GetLastChecked() time.Time
+}
+
 // // IamServiceSetting ...
 // type IServiceSetting interface {
 // 	GetName() string
