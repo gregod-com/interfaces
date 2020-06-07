@@ -6,4 +6,5 @@ type IPluginMetadata interface {
 	Version() string
 	Size() uint64
 	URL() string
+	Category() string
 }
