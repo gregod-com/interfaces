@@ -1,6 +1,10 @@
 package interfaces
 
+import (
+	"github.com/urfave/cli/v2"
+)
+
 // ICMDPlugin ...
 type ICMDPlugin interface {
-	GetCommands(c *cli.Context) []*cli.Command
+	GetCommands(i interface{}) []*cli.Command
 }
