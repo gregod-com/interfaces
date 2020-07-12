@@ -36,3 +36,23 @@ func (m PluginMetadata) URL() string {
 func (m PluginMetadata) Category() string {
 	return m.category
 }
+
+func (m PluginMetadata) SetName(name string) {
+	m.name = name
+}
+
+func (m PluginMetadata) SetVersion(version string) {
+	m.version = version
+}
+
+func (m PluginMetadata) SetSize(size uint64) {
+	m.size = size
+}
+
+func (m PluginMetadata) SetURL(url string) {
+	m.url = url
+}
+
+func (m PluginMetadata) SetCategory(category string) {
+	m.category = category
+}
