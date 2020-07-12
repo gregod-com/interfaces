@@ -8,6 +8,7 @@ type IGrgdPlugin interface {
 	GetUIPlugin(i interface{}) IUIPlugin // this might not be a good idea
 }
 
+// PluginMetadata ...
 type PluginMetadata struct {
 	name     string
 	version  string
@@ -16,22 +17,22 @@ type PluginMetadata struct {
 	category string
 }
 
-func (m pluginMetadata) Name() string {
+func (m PluginMetadata) Name() string {
 	return m.name
 }
 
-func (m pluginMetadata) Version() string {
+func (m PluginMetadata) Version() string {
 	return m.version
 }
 
-func (m pluginMetadata) Size() uint64 {
+func (m PluginMetadata) Size() uint64 {
 	return m.size
 }
 
-func (m pluginMetadata) URL() string {
+func (m PluginMetadata) URL() string {
 	return m.url
 }
 
-func (m pluginMetadata) Category() string {
+func (m PluginMetadata) Category() string {
 	return m.category
 }
