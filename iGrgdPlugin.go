@@ -5,7 +5,6 @@ type IGrgdPlugin interface {
 	Init(i interface{}) interface{}
 	GetMetaData(i interface{}) interface{}
 	Methods(i interface{}) map[string]interface{}
-	GetUIPlugin(i interface{}) IUIPlugin // this might not be a good idea
 }
 
 // PluginMetadata ...
