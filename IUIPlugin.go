@@ -7,4 +7,5 @@ type IUIPlugin interface {
 	PrintBanner(i interface{}) interface{}
 	PrintWorkloadOverview(i interface{})
 	PrintTable(i interface{}, heads []string, rows [][]string) interface{}
+	Println(i interface{}, str string) interface{}
 }
