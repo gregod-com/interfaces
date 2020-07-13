@@ -37,22 +37,22 @@ func (m PluginMetadata) Category() string {
 	return m.category
 }
 
-func (m PluginMetadata) SetName(name string) {
+func (m *PluginMetadata) SetName(name string) {
 	m.name = name
 }
 
-func (m PluginMetadata) SetVersion(version string) {
+func (m *PluginMetadata) SetVersion(version string) {
 	m.version = version
 }
 
-func (m PluginMetadata) SetSize(size uint64) {
+func (m *PluginMetadata) SetSize(size uint64) {
 	m.size = size
 }
 
-func (m PluginMetadata) SetURL(url string) {
+func (m *PluginMetadata) SetURL(url string) {
 	m.url = url
 }
 
-func (m PluginMetadata) SetCategory(category string) {
+func (m *PluginMetadata) SetCategory(category string) {
 	m.category = category
 }

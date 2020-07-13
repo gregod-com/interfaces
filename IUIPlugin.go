@@ -1,6 +1,6 @@
 package interfaces
 
-// IUI ...
+// IUIPlugin ...
 type IUIPlugin interface {
 	ClearScreen(i interface{}) interface{}
 	PrintPercentOfScreen(i interface{}, str string, percent int) interface{}
