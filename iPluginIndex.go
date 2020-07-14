@@ -11,5 +11,5 @@ type IPluginIndex interface {
 	GetConfigPath() string
 	GetPluginList() []IPluginMetadata
 	GetLastChecked() time.Time
-	AddPlugin(newplug IPluginMetadata) error
+	AddPlugin(newplug IPluginMetadata) string
 }
