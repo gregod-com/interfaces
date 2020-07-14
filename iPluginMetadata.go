@@ -2,9 +2,9 @@ package interfaces
 
 // IPluginMetadata ...
 type IPluginMetadata interface {
-	Name() string
-	Version() string
-	Size() uint64
-	URL() string
-	Category() string
+	GetName() string
+	GetVersion() string
+	GetSize() uint64
+	GetURL() string
+	GetCategory() string
 }
