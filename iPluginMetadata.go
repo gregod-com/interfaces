@@ -7,4 +7,5 @@ type IPluginMetadata interface {
 	GetSize() uint64
 	GetURL() string
 	GetCategory() string
+	GetActive() bool
 }
