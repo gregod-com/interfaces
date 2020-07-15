@@ -8,4 +8,5 @@ type IPluginMetadata interface {
 	GetURL() string
 	GetCategory() string
 	GetActive() bool
+	SetActive(bool)
 }
