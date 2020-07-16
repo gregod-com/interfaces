@@ -9,7 +9,7 @@ type IPluginIndex interface {
 	Update() error
 	PrintConfig() error
 	GetConfigPath() string
-	GetPluginList() []IPluginMetadata
+	GetPluginList() map[string]IPluginMetadata
 	GetLastChecked() time.Time
 	AddPlugin(newplug IPluginMetadata) string
 }
