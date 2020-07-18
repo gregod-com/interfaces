@@ -7,12 +7,15 @@ import (
 // IConfigObject interface ...
 type IConfigObject interface {
 	Update() error
-	PrintConfig() error
 	GetSourceAsString() string
-	// GetSourceAsBytes() []byte
 	GetConfigPath() string
-	IsDebug() bool
 	GetProjectDir() string
+	WasCommandUsed(string) bool
+	LearnedCommands() int
+	MarkCommandLerned(string) error
+	GetLastUsed() time.Time
+
+	// those should maybe be moved to a interface that focuses on workloads
 	GetWorkloadMetadata() map[string]IWorkloadMetadata
 	GetWorkloads() map[string]IWorkload
 	GetRegistries() map[string]string
@@ -20,8 +23,4 @@ type IConfigObject interface {
 	RemoveWorkloadShortcut(string) error
 	GetWorkloadShortcuts() map[string]string
 	GetWorkloadByShortcut(string) string
-	WasCommandUsed(string) bool
-	LearnedCommands() int
-	MarkCommandLerned(string) error
-	GetLastUsed() time.Time
 }
