@@ -1,3 +1,3 @@
 module github.com/gregod-com/interfaces
 
-go 1.14
+go 1.15
